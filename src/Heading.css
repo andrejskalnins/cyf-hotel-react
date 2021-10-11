@@ -1,0 +1,18 @@
+.Heading {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  height: 50px;
+  color: white;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.Heading-logo {
+  margin: 5px;
+}
+.Heading-logo-text {
+  padding: 15px;
+}
