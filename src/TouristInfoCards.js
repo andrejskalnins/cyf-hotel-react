@@ -31,9 +31,10 @@ function TouristInfoCards(props) {
 
   return (
     <div className="d-flex justify-content-center ">
-      {cities.map(city => {
+      {cities.map((city, index) => {
         return (
           <TouristInfoCard
+            key={index}
             img={city.img}
             name={city.name}
             description={city.description}
