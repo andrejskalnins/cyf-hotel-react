@@ -1,6 +1,6 @@
 import React from "react";
 import SearchResultsHeader from "./SearchResultsHeader";
-
+import moment from "moment";
 function SearchResults(props) {
   return (
     <table className="table table-responsive text-left">
@@ -17,6 +17,12 @@ function SearchResults(props) {
               <th scope="col">{customer.roomId}</th>
               <th scope="col">{customer.checkInDate}</th>
               <th scope="col">{customer.checkOutDate}</th>
+              <th scope="col">
+                {moment(customer.checkOutDate).diff(
+                  moment(customer.checkInDate),
+                  "days"
+                ) + " nights"}
+              </th>
             </tr>
           );
         })}

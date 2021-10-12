@@ -12,6 +12,7 @@ function SearchResultsHeader() {
         <th scope="col">Room ID</th>
         <th scope="col">Check In Date</th>
         <th scope="col">Check Out Date</th>
+        <th scope="col">Total Stay</th>
       </tr>
     </thead>
   );
