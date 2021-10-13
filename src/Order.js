@@ -8,7 +8,9 @@ function Order(props) {
   }
   return (
     <li>
-      <span>Pizzas: {orders}</span>
+      <span>
+        {props.orderType}: {orders}
+      </span>
       <RestaurantButton addOrder={orderOne} />;
     </li>
   );
